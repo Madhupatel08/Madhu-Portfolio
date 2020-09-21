@@ -1,0 +1,98 @@
+.aside .logo a::before{
+  border-top: 4px solid #72b626;
+  border-left: 4px solid #72b626;
+}
+.aside .logo a::after{
+  border-right: 4px solid #72b626;
+  border-bottom: 4px solid #72b626;
+}
+body.dark .project .container .row ul li a,
+body.dark .aside .nav li a:hover,
+body.dark .aside .nav li a.active,
+.aside .nav li a:hover,
+.aside .nav li a.active{
+  color: #72b626;
+}
+
+.aside .nav-toggler span,
+.aside .nav-toggler span::after,
+.aside .nav-toggler span::before,
+.home .intro .social-links a
+{
+    color: #72b626;
+}
+/* about me */
+.gbJXkc::before {
+    /* counter-increment: section 1;
+    content: "0" counter(section) "."; */
+    margin-right: 10px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-weight: normal;
+    color: #72b626;
+    font-size: 20px;
+    position: relative;
+    bottom: 4px;
+}
+.gbJXkc::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color:#72b626;
+    position: relative;
+    top: -5px;
+    margin-left: 20px;
+}
+/* hobbies table */
+.fRygz::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #72b626;
+    font-size: 15px;
+    line-height: 12px;
+}
+/* contact section */
+.mailme{
+  position: absolute;
+    color:  #72b626;
+    /* background-color: transparent; */
+    border: 1px solid  #72b626;
+
+    border-radius: 3px;
+    padding: 1.25rem 1.75rem;
+    font-size: 14px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    margin-top: 120px;
+}
+/* blog tags */
+.blog .blog-item-inner .blog-info .blog-tags a{
+  text-decoration: none;
+  font-weight: 600;
+    color: #72b626;
+}
+/* blog date */
+.blog .blog-item-inner .blog-date{
+  position: absolute;
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #72b626;
+  font-weight: 600px;
+  font-size: 14px;
+  left: 15px;
+  bottom: 15px;
+}
+/* hobbies */
+.fRygz {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 15px;
+    color: #72b626;
+}
