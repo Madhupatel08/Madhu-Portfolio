@@ -25,7 +25,7 @@ h2::before {
 *{
   margin: 0;
   padding: 0;
-  outline: none
+  outline: none;
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -91,8 +91,8 @@ h2::before {
   margin: auto;
 }
 .shadow-dark{
-  -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  -webkit-box-shadow: 0 0 40px rgba(48, 46, 77, 0.15);
+  box-shadow: 0 0 40px rgba(48, 46, 77, 0.15);
 }
 .hidden{
   display: none!important;
@@ -418,7 +418,7 @@ margin: 0px 0px 10px;
     left: 0;
   }
   .aside{
-    left: -270;px
+    left: -270px;
   }
   .main-content{
     padding-left: 0;
@@ -430,7 +430,7 @@ margin: 0px 0px 10px;
 }
 @media(max-width:991px)  {
   /* .blog blog-item , .portfolio .portfolio-item,.service .service-item */
-  .blog .blog-item,{
+  .blog .blog-item{
     -ms-flex:0 0 50%;
     flex:0 0 50%;
     max-width: 50%;
@@ -438,7 +438,9 @@ margin: 0px 0px 10px;
 }
 @media(max-width:767px){
   .contact {
-
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 @media(max-width:575px){
@@ -500,4 +502,82 @@ body.dark .shadow-dark{
 
   margin-top: 10px;
   margin-bottom: 20px;
+}
+/*media queries*/
+/*big landscape tablets laptop and desktops*/
+@media(max-width: 1199px) {
+  .section .container {
+      padding-top: 70px;
+  }
+
+  .aside .nav-toggler {
+      display: -ms-flexbox;
+      display: flex;
+      left: 30px;
+  }
+
+  .aside .nav-toggler.open {
+      left: 300px;
+  }
+
+  .aside {
+      left: -270px;
+  }
+
+  .aside.open {
+      left: 0;
+  }
+
+  .section {
+      left: 0;
+  }
+
+  .section.open {
+      left: 270px;
+  }
+
+  .about .about-content .personal-info .info-item p span {
+      display: block;
+      margin-left: 0;
+  }
+}
+
+@media(max-width: 991px) {
+
+  .main-container,.aside,.main-content,.service .service-item,.container
+  .blog .blog-item,
+  .portfolio .portfolio-item ,.project section,.blog section,.blog section.container{
+      flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+@media(max-width: 767px) {
+
+  .about .about-content .personal-info,
+  .contact .contact-form .col-6,
+  .service .service-item,.blog section,.blog section.container
+  .blog .blog-item,
+  .about .about-content .skills,
+  .about .about-content .education,
+  .about .about-content .experience ,.project section{
+      flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .project section,.portfolio .portfolio-filter button,.blog section,.blog section.container{
+      margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 575px) {
+
+  .portfolio .portfolio-item,
+  .contact .contact-info-item , .project section,.blog section,.blog section.container{
+      flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      max-width: 100%;
+  }
 }
