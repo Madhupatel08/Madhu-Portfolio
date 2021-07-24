@@ -575,7 +575,7 @@ body.dark .shadow-dark{
 @media(max-width: 575px) {
 
   .portfolio .portfolio-item,
-  .contact .contact-info-item , .project section,.blog section,.blog section.container{
+  .contact .contact-info-item , .project section{
       flex: 0 0 100%;
       -ms-flex: 0 0 100%;
       max-width: 100%;
